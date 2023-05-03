@@ -1,0 +1,2 @@
+All photos used on the website are in the folder "assets", all photos are owned by the author Peizhen Liao
+Pictures being used: drone.png(in portfolio.jsx); piano.png(in portfolio.jsx); piano2.png(in portfolio.jsx); profile.jpg(in main.jsx); website.jpg(in portfolio.jsx); vlog.png(in portfolio.jsx)

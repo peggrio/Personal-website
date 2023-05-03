@@ -1,0 +1,183 @@
+/* Adapted from https://fonts.google.com/ under the SIL Open Font License  https://fonts.google.com/attribution */
+/* Adapted from https://iconscout.com/ under the IconScout Simple License https://iconscout.com/licenses#simple_license*/
+
+/* =================GOOGLE FONTS==================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@600&family=Sriracha&display=swap');
+
+:root {
+  height:100%;
+  --background-white: white;
+  --background-pink: rgb(250, 133, 184, 1);
+  --background-blue: rgb(50, 165, 237);
+  --background-black: black;
+  --background-yellow: rgb(228, 203, 78);
+}
+
+/* =============BASE================*/
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.day {
+
+  background-color: var(--background-white);
+  background-image: radial-gradient(closest-side, rgb(250, 133, 184, 1), rgb(250, 133, 184, 0)),
+    radial-gradient(closest-side, rgb(50, 165, 237), rgb(56, 160, 224, 0)),
+    radial-gradient(closest-side, rgb(224, 204, 56, 1), rgb(224, 204, 56, 0));
+
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    110vmax 110vmax;
+
+  background-position:
+    -80vmax -80vmax,
+    60vmax 60vmax,
+    10vmax 10vmax;
+
+  /* background-repeat: no-repeat; */
+  animation: 20s linear 0s infinite alternate movement;
+  z-index: -1;
+}
+
+.night {
+  background-color: var(--background-black);
+  background-image: radial-gradient(closest-side, rgb(250, 133, 184, 1), rgb(250, 133, 184, 0)),
+    radial-gradient(closest-side, rgb(50, 165, 237), rgb(56, 160, 224, 0)),
+    radial-gradient(closest-side, rgb(224, 204, 56, 1), rgb(224, 204, 56, 0));
+
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    110vmax 110vmax;
+
+  background-position:
+    -80vmax -80vmax,
+    60vmax 60vmax,
+    10vmax 10vmax;
+
+  /* background-repeat: no-repeat; */
+  animation: 20s linear 0s infinite alternate movement;
+  z-index: -1;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: 'Sriracha', cursive;
+}
+
+/* ==============set backgound-image================== */
+
+
+@keyframes movement {
+
+  0%,
+  100% {
+    background-size:
+      130vmax 130vmax,
+      150vmax 150vmax,
+      110vmax 110vmax;
+
+    background-position:
+      -50vmax -35vmax,
+      30vmax 0vmax,
+      0vmax 0vmax;
+  }
+
+  25% {
+    background-size:
+      120vmax 120vmax,
+      140vmax 140vmax,
+      120vmax 120vmax;
+
+    background-position:
+      -10vmax -35vmax,
+      10vmax 0vmax,
+      80vmax -30vmax;
+  }
+
+  50% {
+    background-size:
+      120vmax 120vmax,
+      130vmax 130vmax,
+      130vmax 130vmax;
+
+    background-position:
+      10vmax 0vmax,
+      -20vmax -20vmax,
+      50vmax -10vmax;
+  }
+
+  75% {
+    background-size:
+      170vmax 170vmax,
+      140vmax 140vmax,
+      120vmax 120vmax;
+
+    background-position:
+      -10vmax -20vmax,
+      0vmax -50vmax,
+      20vmax 0vmax;
+  }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* -------------------skip to content-------------------- */
+
+.skip-content {
+  text-align: center;
+}
+
+.skip-to-content-link {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  width: 10rem;
+  padding: 0.5rem;
+  position: absolute;
+  transform: translateY(-500%);
+  transition: transform 0.3s;
+  border: 1px solid black;
+}
+
+.skip-to-content-link:focus {
+  transform: translateY(15%);
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}

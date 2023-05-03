@@ -1,0 +1,153 @@
+/* Adapted from https://iconscout.com/ under the IconScout Simple License https://iconscout.com/licenses#simple_license*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cookie&family=Montserrat:wght@600&family=Sriracha&family=Zen+Dots&display=swap');
+@import url('https://css.gg/home-alt.css');
+
+
+header {
+
+    height: 3rem;
+    align-items: center;
+
+    margin: 10px;
+    margin-bottom: 0;
+    z-index: 0;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav__logo {
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: rgb(250, 133, 184, 1);
+    display: flex;
+    z-index: 2;
+}
+.black__shadow {
+    text-shadow: rgb(0, 0, 0) 2px 0 2px;
+}
+
+.white__shadow {
+    text-shadow: rgb(255, 255, 255) 2px 0 1px;
+}
+
+.menu__logo__color__white {
+    display: flex;
+    color: rgb(110, 110, 110);
+    cursor: pointer;
+    z-index: 2;
+    align-items: center;
+}
+
+.menu__logo__color__black {
+    display: flex;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    align-items: center;
+}
+
+
+/* --------------------menu part---------------------- */
+.nav__menu {
+    margin-right: 2rem;
+    column-gap: 2rem;
+    display: flex;
+    position: fixed;
+    float: right;
+    right: 20px;
+    font-size: 1.5rem;
+    height: 3rem;
+}
+
+.nav__menu--close {
+    display: none;
+}
+
+
+.nav__menu a:hover~.cursor {
+    transform: scale(2.5);
+}
+
+
+/* ---------------------mini menu--------------------------- */
+
+.mini__menu--close {
+    display: none;
+}
+
+
+.header:hover .cursor {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(250, 133, 184, 1);
+    position: fixed;
+    border-radius: 50%;
+    border: 2px solid white;
+    pointer-events: none;
+    z-index: 1;
+    box-shadow: 5px 3px 6px rgb(0, 0, 0, 0.6);
+}
+
+.cursor {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+
+.cursor--close {
+    display: none;
+}
+
+/* -----------------------------mini__logo--------------------------------- */
+
+.nav__menu--close {
+    display: none;
+}
+
+.mini__menu--open {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    float: right;
+    right: 1.5rem;
+    margin-top: 0;
+    position: absolute;
+    z-index: 20;
+    cursor: pointer;
+    background-color: inherit;
+}
+
+
+.drag__up {
+    display: none;
+}
+
+.drag__down {
+    position: absolute;
+    top: 3rem;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 2px solid white;
+    z-index: 20;
+    animation: fadeIn  duration timing-function delay iteration-count direction fill-mode;
+
+}
+
+.drag__down .nav__item {
+    border: 2px solid white;
+    font-size: 1.2rem;
+    align-items: center;
+    z-index: 100;
+}
+
+.drag__down .nav__item:hover {
+    background-color: var(--background-blue);
+    color: aliceblue;
+}

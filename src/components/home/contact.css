@@ -1,0 +1,51 @@
+.contact {
+    max-width: 400px;
+    margin: 5% auto;
+    text-align: center;
+}
+
+.contact label {
+    text-align: left;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.contact input,
+.contact textarea,
+.contact select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.contact button {
+    margin-top: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px;
+    background-color: none;
+    font-size: 1.5rem;
+    justify-content: center;
+    background-color: var(--background-pink);
+    box-shadow: 5px 0px 30px rgb(0, 0, 0);
+    animation: move2right 2s ease infinite;
+}
+
+text {
+    display: block;
+    text-align: left;
+    color: rgb(184, 23, 50);
+}
+
+@media screen and (max-width: 510px) {
+    .contact {
+        max-width: 300px;
+        margin: 5% auto;
+        text-align: center;
+    }
+}

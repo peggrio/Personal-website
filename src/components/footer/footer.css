@@ -1,0 +1,25 @@
+.footer {
+    margin-top: 10rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.copyright {
+    font-size: 1rem;
+    color: black;
+    text-shadow: rgb(77, 77, 76) 1px 0 10px;
+}
+
+.footer__logo {
+    text-shadow: rgb(77, 77, 76) 1px 0 5px;
+    justify-self: center;
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: rgb(250, 133, 184, 1);
+    text-shadow: rgb(0, 0, 0) 2px 0 2px;
+    display: block;
+    z-index: 2;
+}
